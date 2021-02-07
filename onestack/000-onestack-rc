@@ -1,0 +1,96 @@
+#Set warehouse IP
+export REPO_IPADDR=10.4.7.147
+
+#Set cluster consistent password
+export CLUSTER_PASSWD="cetc.123"
+
+# master keepalived virtual ip address
+export K8SHA_VIP=10.4.4.130
+
+export MASTER_NODES=(
+                      "10.4.7.147"
+                    #  "10.6.7.157"
+                    #  "10.6.7.158"
+                    )
+
+# WORKER_NODES with WORKER_HOSTS will be joined into cluster in k8s initialization as worker role
+export WORKER_NODES=(
+                   #  "10.6.7.159"
+                   #  "10.6.7.155"
+                   #  "10.6.7.156"
+                    )
+
+# EXTRA_WORKER_NODES and EXTRA_WORKER_HOSTS are user for adding worker nodes to a running cluster
+export EXTRA_WORKER_NODES=(
+                            # "10.6.7.157"
+                            # "10.6.7.158"
+                          )
+
+export EXTRA_WORKER_HOSTS=(
+                            # "onestack07"
+                            # "onestack08"
+                          )
+
+echo ${MASTER_NODES[@]}
+echo ${WORKER_NODES[@]}
+echo ${EXTRA_WORKER_HOSTS[@]}
+# kubernetes CIDR pod subnet
+export K8SHA_CIDR=192.168.0.0
+
+#Set Cluster size
+#if Cluster size >100 , use medium
+#if Cluster size <100 , use small
+#default is small
+export CLUSTER_SIZE="small"
+
+#-------------------------------------------------------------------------
+#The contents below the line are not recommended to be modified
+#-------------------------------------------------------------------------
+
+#Set cluster common host name
+export COMMON_HOSTNAME="onestack"
+
+# Set warehouse port
+export REPO_PORT=31011
+
+# master keepalived virtual ip hostname
+export K8SHA_VHOST=${COMMON_HOSTNAME}-vip
+
+# master network interface name array
+export K8SHA_NETINF=(
+                      "os.mgm"
+                      "os.mgm"
+                      "os.mgm"
+                     )
+# master hostnames
+
+export MASTER_HOSTS=(
+                      "${COMMON_HOSTNAME}01"
+                      "${COMMON_HOSTNAME}02"
+                      "${COMMON_HOSTNAME}03"
+                    )
+
+# virtual_router_id for keepalived service
+# If keepalived status appears:
+# (VI_1): ip address associated with VRID 51 not present in MASTER advert
+# please select another the virtual route id between 0 and 255
+export K8SHA_VROUTE_ID=$(expr $(date +%N) % 250 + 1)
+
+# keepalived auth_pass config
+export K8SHA_KEEPALIVED_AUTH=412f7dc3bfed32194d1600c483e10ad1d
+
+# calico network interface
+export K8SHA_CALICO_NETWORK_INTERFACE=os.mgm
+
+#kubernetes pods Fast Update and Fast Reaction
+if [ "${CLUSTER_SIZE}" == "small" ];then
+  export NODE_MON_PERIOD=2s
+  export NODE_MON_GRACE_PERIOD=16s
+  export NOTREADY_TOL_SEC=30
+  export UNREACH_TOL_SEC=30
+else
+  export NODE_MON_PERIOD=5s
+  export NODE_MON_GRACE_PERIOD=40s
+  export NOTREADY_TOL_SEC=300
+  export UNREACH_TOL_SEC=300
+fi

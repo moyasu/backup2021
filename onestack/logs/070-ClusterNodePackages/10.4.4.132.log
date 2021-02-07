@@ -1,0 +1,431 @@
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+Failed to pull keepalived
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+Failed to pull keepalived
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+keepalived is already the newest version (1:1.2.24-1kord0.16.04.2).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+--2021-02-01 21:07:18--  http://10.14.7.200:31011/smallcloud2/master/docker-compose
+Connecting to 10.14.7.200:31011... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2021-02-01 21:07:18 ERROR 403: Forbidden.
+
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+keepalived is already the newest version (1:1.2.24-1kord0.16.04.2).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+--2021-02-01 21:07:56--  http://10.14.7.200:31011/smallcloud2/master/docker-compose
+Connecting to 10.14.7.200:31011... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2021-02-01 21:07:56 ERROR 403: Forbidden.
+
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+keepalived is already the newest version (1:1.2.24-1kord0.16.04.2).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+--2021-02-01 21:09:20--  http://10.14.7.200:31011/smallcloud2/master/docker-compose
+Connecting to 10.14.7.200:31011... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2021-02-01 21:09:20 ERROR 403: Forbidden.
+
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+10.4.4.132
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+10.4.4.132
+10.4.4.132
+
+10.4.4.132
+10.4.4.132
+
+docker.io is installed,skip.
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+jq is installed,skip.
+kubelet is right installed,skip.
+kubelet is right installed,skip.
+kubeadm is right installed,skip.
+kubeadm is right installed,skip.
+kubectl is right installed,skip.
+kubectl is right installed,skip.
+nfs-common is installed,skip.
+nfs-common is installed,skip.
+open-iscsi is installed,skip.
+open-iscsi is installed,skip.

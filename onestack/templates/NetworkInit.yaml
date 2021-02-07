@@ -1,0 +1,33 @@
+---
+PhyCardAllocation:
+  MgmNetAdapterName: enp5s0f3
+  IntNetAdapterName: enp5s0f2
+  HybNetAdapterName: enp5s0f1
+
+
+MgmNetProfiles:
+  MgmAddr: 192.168.100.200
+  MgmMask: 255.255.255.0
+  MgmNetGateway: 192.168.100.254
+  MgmVlanId: 1
+
+
+IntNetProfiles:
+  IntAddr: 192.168.203.200
+  IntMask: 255.255.255.0
+  IntNetGateway: 192.168.203.254
+
+
+StorNetProfiles:
+  StorAddr: 192.168.205.200
+  StorMask: 255.255.255.0
+  StorNetGateway: 192.168.205.254
+  StorVlanId: 205
+
+
+ExtNetProfiles:
+  ExtAddr: 192.168.204.200
+  ExtMask: 255.255.255.0
+  ExtNetGateway: 192.168.204.254
+  ExtVlanId: 204
+

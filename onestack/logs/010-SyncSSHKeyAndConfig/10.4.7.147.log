@@ -1,0 +1,339 @@
+PING 10.4.7.147 (10.4.7.147) 56(84) bytes of data.
+
+--- 10.4.7.147 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 108ms
+rtt min/avg/max/mdev = 0.015/0.021/0.064/0.014 ms
+10.4.7.147
+
+
+apt install expect ....
+正在读取软件包列表...
+正在分析软件包的依赖关系树...
+正在读取状态信息...
+将会同时安装下列软件：
+  libtcl8.6 tcl-expect
+建议安装：
+  tcl8.6
+推荐安装：
+  tcl8.6 tk8.6
+下列【新】软件包将被安装：
+  expect libtcl8.6 tcl-expect
+升级了 0 个软件包，新安装了 3 个软件包，要卸载 0 个软件包，有 24 个软件包未被升级。
+需要下载 990 kB 的归档。
+解压缩后会消耗 4,322 kB 的额外空间。
+获取:1 http://10.4.7.147:31011/smallcloud2/apt  libtcl8.6 8.6.5+dfsg-2kord [759 kB]
+获取:2 http://10.4.7.147:31011/smallcloud2/apt  tcl-expect 5.45-7kord [93.6 kB]
+获取:3 http://10.4.7.147:31011/smallcloud2/apt  expect 5.45-7kord [137 kB]
+已下载 990 kB，耗时 0秒 (29.2 MB/s)
+正在选中未选择的软件包 libtcl8.6:arm64。
+(正在读取数据库 ... (正在读取数据库 ... 5%(正在读取数据库 ... 10%(正在读取数据库 ... 15%(正在读取数据库 ... 20%(正在读取数据库 ... 25%(正在读取数据库 ... 30%(正在读取数据库 ... 35%(正在读取数据库 ... 40%(正在读取数据库 ... 45%(正在读取数据库 ... 50%(正在读取数据库 ... 55%(正在读取数据库 ... 60%(正在读取数据库 ... 65%(正在读取数据库 ... 70%(正在读取数据库 ... 75%(正在读取数据库 ... 80%(正在读取数据库 ... 85%(正在读取数据库 ... 90%(正在读取数据库 ... 95%(正在读取数据库 ... 100%(正在读取数据库 ... 系统当前共安装有 27247 个文件和目录。)
+正准备解包 .../libtcl8.6_8.6.5+dfsg-2kord_arm64.deb  ...
+正在解包 libtcl8.6:arm64 (8.6.5+dfsg-2kord) ...
+正在选中未选择的软件包 tcl-expect:arm64。
+正准备解包 .../tcl-expect_5.45-7kord_arm64.deb  ...
+正在解包 tcl-expect:arm64 (5.45-7kord) ...
+正在选中未选择的软件包 expect。
+正准备解包 .../expect_5.45-7kord_arm64.deb  ...
+正在解包 expect (5.45-7kord) ...
+正在处理用于 libc-bin (2.23-0kord11k1) 的触发器 ...
+正在处理用于 man-db (2.7.5-1kord) 的触发器 ...
+正在设置 libtcl8.6:arm64 (8.6.5+dfsg-2kord) ...
+正在设置 tcl-expect:arm64 (5.45-7kord) ...
+正在设置 expect (5.45-7kord) ...
+正在处理用于 libc-bin (2.23-0kord11k1) 的触发器 ...
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Created directory '/root/.ssh'.
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:dN/LzguAs8sBIjJdy8TBnAcdcjaEx/D5PEP4gdREkPE root@Kylin
+The key's randomart image is:
++---[RSA 2048]----+
+|   o=OXOo        |
+|   .=B**.        |
+|    +o= E .      |
+| . + . * + . .   |
+|o o + . S . . .  |
+| o . . . = . . . |
+|        o   . o  |
+|       . o   +   |
+|        o     +. |
++----[SHA256]-----+
+
+ssh-copy-id to 10.4.7.147
+spawn ssh-copy-id 10.4.7.147
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+The authenticity of host '10.4.7.147 (10.4.7.147)' can't be established.
+ECDSA key fingerprint is SHA256:SZTN6GwG2vWoJ5MGht6ekhtlhb9xaTWmLiZzlDx5oXM.
+Are you sure you want to continue connecting (yes/no)? yes
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.7.147's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.7.147'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.7.147 (10.4.7.147) 56(84) bytes of data.
+
+--- 10.4.7.147 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 106ms
+rtt min/avg/max/mdev = 0.014/0.020/0.061/0.014 ms
+10.4.7.147
+
+
+apt install expect ....
+正在读取软件包列表...
+正在分析软件包的依赖关系树...
+正在读取状态信息...
+expect 已经是最新版 (5.45-7kord)。
+升级了 0 个软件包，新安装了 0 个软件包，要卸载 0 个软件包，有 24 个软件包未被升级。
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:XLgZXILPtxVLRcKPU5qyR/kryoJQP2/GxlQyClT1kwI root@onestack01
+The key's randomart image is:
++---[RSA 2048]----+
+|       oE.o..oo  |
+|      o. = .+o.  |
+|     . o+ o.+X   |
+|      o.o==.@..  |
+|     . oSo X o   |
+|    .   + + . .  |
+|     . . * .   . |
+|      . ..B . .  |
+|         =o. .   |
++----[SHA256]-----+
+
+ssh-copy-id to 10.4.7.147
+spawn ssh-copy-id 10.4.7.147
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.7.147's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.7.147'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.7.147 (10.4.7.147) 56(84) bytes of data.
+
+--- 10.4.7.147 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.014/0.019/0.057/0.013 ms
+PING 10.4.7.147 (10.4.7.147) 56(84) bytes of data.
+
+--- 10.4.7.147 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.014/0.020/0.065/0.015 ms
+10.4.7.147
+
+
+apt install expect ....
+正在读取软件包列表...
+正在分析软件包的依赖关系树...
+正在读取状态信息...
+expect 已经是最新版 (5.45-7kord)。
+升级了 0 个软件包，新安装了 0 个软件包，要卸载 0 个软件包，有 24 个软件包未被升级。
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:Fd+j5GaRLEzvsjMp4/6O1Vb5E0bz0fgOfP6zUn2x6DA root@onestack01
+The key's randomart image is:
++---[RSA 2048]----+
+|          o      |
+|         o = o ..|
+|          + B ++.|
+|         . = +.=+|
+|        S . * *oB|
+|           E o.O+|
+|        o * * ..=|
+|       . = + o .o|
+|       .+oo   ..+|
++----[SHA256]-----+
+
+ssh-copy-id to 10.4.7.147
+spawn ssh-copy-id 10.4.7.147
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.7.147's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.7.147'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.7.147 (10.4.7.147) 56(84) bytes of data.
+
+--- 10.4.7.147 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.014/0.020/0.061/0.013 ms
+10.4.7.147
+
+
+apt install expect ....
+正在读取软件包列表...
+正在分析软件包的依赖关系树...
+正在读取状态信息...
+expect 已经是最新版 (5.45-7kord)。
+升级了 0 个软件包，新安装了 0 个软件包，要卸载 0 个软件包，有 24 个软件包未被升级。
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:Hk3oMa38ISZ5iBgaQLf1WpD+GnsNtsFae4/Pxy6vICw root@onestack01
+The key's randomart image is:
++---[RSA 2048]----+
+|o. . o.          |
+|. . o.o  o       |
+|. ...  o+ o      |
+| o o oo= *       |
+|. . ..* S o      |
+|     ..% + .     |
+|     EBoB.. .    |
+|     +.+.o+. o   |
+|      . ..o=*o   |
++----[SHA256]-----+
+
+ssh-copy-id to 10.4.7.147
+spawn ssh-copy-id 10.4.7.147
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.7.147's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.7.147'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.7.147 (10.4.7.147) 56(84) bytes of data.
+
+--- 10.4.7.147 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.014/0.020/0.060/0.014 ms
+10.4.7.147
+
+
+apt install expect ....
+正在读取软件包列表...
+正在分析软件包的依赖关系树...
+正在读取状态信息...
+expect 已经是最新版 (5.45-7kord)。
+下列软件包是自动安装的并且现在不需要了：
+  libnl-3-200 libnl-genl-3-200 libnl-route-3-200 libperl5.22 libsnmp-base
+  libsnmp30
+使用'apt autoremove'来卸载它(它们)。
+升级了 0 个软件包，新安装了 0 个软件包，要卸载 0 个软件包，有 24 个软件包未被升级。
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:MtulQmUV2SLzFV4IiYhWjaRDTp+p+SsF5m2zaseH+BU root@onestack01
+The key's randomart image is:
++---[RSA 2048]----+
+|    o+o+ .+*.o.  |
+|   +oooo=.+.+.   |
+|   .+ + o+ o.    |
+|    o+ o  .      |
+|   ooo+ E .      |
+|    .o== +       |
+|     =+++        |
+|    + =+.        |
+|   ..=o.         |
++----[SHA256]-----+
+
+ssh-copy-id to 10.4.7.147
+spawn ssh-copy-id 10.4.7.147
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.7.147's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.7.147'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.7.147 (10.4.7.147) 56(84) bytes of data.
+
+--- 10.4.7.147 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.014/0.019/0.061/0.014 ms
+10.4.7.147
+
+
+apt install expect ....
+正在读取软件包列表...
+正在分析软件包的依赖关系树...
+正在读取状态信息...
+expect 已经是最新版 (5.45-7kord)。
+下列软件包是自动安装的并且现在不需要了：
+  libnl-3-200 libnl-genl-3-200 libnl-route-3-200 libperl5.22 libsnmp-base
+  libsnmp30
+使用'apt autoremove'来卸载它(它们)。
+升级了 0 个软件包，新安装了 0 个软件包，要卸载 0 个软件包，有 24 个软件包未被升级。
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:AJyqaPrpXR6fWKRa+L/QHT7uyqE8QrwK6+sfUdkoVas root@onestack01
+The key's randomart image is:
++---[RSA 2048]----+
+|   ..o..         |
+|    +.+ .        |
+|   o +.o         |
+|  . o ..         |
+|.. o E  S .      |
+|o.  +. + o .     |
+|+  o..* + +      |
+|.o o+B.O + .     |
+|+*Boo.*oB+o      |
++----[SHA256]-----+
+
+ssh-copy-id to 10.4.7.147
+spawn ssh-copy-id 10.4.7.147
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.7.147's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.7.147'"
+and check to make sure that only the key(s) you wanted were added.
+

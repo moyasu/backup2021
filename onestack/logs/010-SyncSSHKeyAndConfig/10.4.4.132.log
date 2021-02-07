@@ -1,0 +1,1615 @@
+PING 10.4.4.132 (10.4.4.132) 56(84) bytes of data.
+
+--- 10.4.4.132 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 100ms
+rtt min/avg/max/mdev = 0.021/0.033/0.099/0.022 ms
+10.4.4.132
+
+
+apt install expect ....
+Reading package lists...
+Building dependency tree...
+Reading state information...
+expect is already the newest version (5.45-7kord).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:C3zn9Usi33RyEt3BN610JKYFwse/7t+0Inj6sht3Eig root@Kylin
+The key's randomart image is:
++---[RSA 2048]----+
+|         .....+ .|
+|          ..o+.o.|
+|           ....++|
+|     .    .  ..+=|
+|      oES.... o.o|
+|       o.+ ..... |
+|        ..+o.o* +|
+|         oo=o*.Bo|
+|         +B.o.=oo|
++----[SHA256]-----+
+
+ssh-copy-id to 10.4.4.132
+spawn ssh-copy-id 10.4.4.132
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.4.132's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.4.132'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.4.132 (10.4.4.132) 56(84) bytes of data.
+
+--- 10.4.4.132 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.020/0.032/0.089/0.020 ms
+10.4.4.132
+
+
+apt install expect ....
+Reading package lists...
+Building dependency tree...
+Reading state information...
+expect is already the newest version (5.45-7kord).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:1/V9n0f2qIVgs0F1RIw3LW3Q7CFubCLuYRNlfRgc/uY root@Kylin
+The key's randomart image is:
++---[RSA 2048]----+
+|            +BO* |
+|           +o*=o*|
+|          + oo+=.|
+|         + o *..o|
+|        S O =  o*|
+|         B = .o+=|
+|        o + . oE+|
+|         .   o  .|
+|            .    |
++----[SHA256]-----+
+
+ssh-copy-id to 10.4.4.132
+spawn ssh-copy-id 10.4.4.132
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.4.132's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.4.132'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.4.132 (10.4.4.132) 56(84) bytes of data.
+
+--- 10.4.4.132 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.019/0.030/0.094/0.022 ms
+10.4.4.132
+
+
+apt install expect ....
+Reading package lists...
+Building dependency tree...
+Reading state information...
+expect is already the newest version (5.45-7kord).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:9cn44R2fhpYSAtv4Hmnz8Wjzz08wjz41SWPyRgYCn4o root@Kylin
+The key's randomart image is:
++---[RSA 2048]----+
+|         ..      |
+|          ....   |
+|       .  .o. .  |
+|        *..+ o * |
+|       ES+..= @ o|
+|        . oo.oo%o|
+|         * oo+++=|
+|        o +o*.+. |
+|         ..oooo+o|
++----[SHA256]-----+
+
+ssh-copy-id to 10.4.4.132
+spawn ssh-copy-id 10.4.4.132
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.4.132's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.4.132'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.4.132 (10.4.4.132) 56(84) bytes of data.
+
+--- 10.4.4.132 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.020/0.035/0.099/0.022 ms
+10.4.4.132
+
+
+apt install expect ....
+Reading package lists...
+Building dependency tree...
+Reading state information...
+expect is already the newest version (5.45-7kord).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:u0pMVDhLE/6xl60X48vvWc/nADc7MaR13qcfXkMUyLo root@onestack01
+The key's randomart image is:
++---[RSA 2048]----+
+|      .o.   . .. |
+|     .=.     o  .|
+|     .o+.   . o..|
+|     ... o + +.o.|
+|      . S o B =.+|
+|     o   o E =.*.|
+|      o . . o =oo|
+|     .   . o ..B*|
+|      ...   oo+o*|
++----[SHA256]-----+
+
+ssh-copy-id to 10.4.4.132
+spawn ssh-copy-id 10.4.4.132
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.4.132's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.4.132'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.4.132 (10.4.4.132) 56(84) bytes of data.
+
+--- 10.4.4.132 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.020/0.053/0.112/0.028 ms
+10.4.4.132
+
+
+apt install expect ....
+Reading package lists...
+Building dependency tree...
+Reading state information...
+expect is already the newest version (5.45-7kord).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:P1L/oO36jbQWyUyvCbBukvmdvb+7JEMV6fmqlHPtCXk root@onestack01
+The key's randomart image is:
++---[RSA 2048]----+
+|              .. |
+|              .. |
+|             ... |
+|        .   ..o  |
+|        So.+.o . |
+|        .o.o=.o..|
+|       +. o.X*oE.|
+|      + oo O+%+..|
+|       +. ==X+B=.|
++----[SHA256]-----+
+
+ssh-copy-id to 10.4.4.132
+spawn ssh-copy-id 10.4.4.132
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.4.132's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.4.132'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.4.132 (10.4.4.132) 56(84) bytes of data.
+
+--- 10.4.4.132 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.025/0.035/0.098/0.022 ms
+10.4.4.132
+
+
+apt install expect ....
+Reading package lists...
+Building dependency tree...
+Reading state information...
+expect is already the newest version (5.45-7kord).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:y4MDbOZALXjJDYhxYdVXQlb+lIyYaLaOmo5jz/5p1YQ root@onestack01
+The key's randomart image is:
+
++---[RSA 2048]----+
+|oo=o.. .+oo      |
+|o= =  .o.= o .   |
+|. * o +.+ o +    |
+| o o o E . o     |
+|  . = . S   .    |
+|   = + + o       |
+|    o = +        |
+|.o.o ... .       |
+|oo*+oo           |
++----[SHA256]-----+
+ssh-copy-id to 10.4.4.132
+spawn ssh-copy-id 10.4.4.132
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.4.132's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.4.132'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.4.132 (10.4.4.132) 56(84) bytes of data.
+
+--- 10.4.4.132 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.023/0.042/0.106/0.025 ms
+10.4.4.132
+
+
+apt install expect ....
+Reading package lists...
+Building dependency tree...
+Reading state information...
+expect is already the newest version (5.45-7kord).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:kifx8/R5D2oTatZZ53YWTEw5ByccdBhfaFqqHin7aEQ root@onestack01
+The key's randomart image is:
++---[RSA 2048]----+
+|             o**=|
+|              *Oo|
+|      .      =o +|
+|       +E   o  o |
+|      +.S .o  o  |
+|       +o++....o.|
+|       . +.+o+oo.|
+|        o.= =o o=|
+|       ..+.... oo|
++----[SHA256]-----+
+
+ssh-copy-id to 10.4.4.132
+spawn ssh-copy-id 10.4.4.132
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.4.132's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.4.132'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.4.132 (10.4.4.132) 56(84) bytes of data.
+
+--- 10.4.4.132 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.027/0.047/0.095/0.020 ms
+10.4.4.132
+
+
+apt install expect ....
+Reading package lists...
+Building dependency tree...
+Reading state information...
+expect is already the newest version (5.45-7kord).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:X8C9p0it/viZfvcejI81P6T7IOnPJlOS3YJNYiJ5g5g root@onestack01
+The key's randomart image is:
++---[RSA 2048]----+
+|                 |
+|         . .     |
+|      o o o .    |
+|     E + + = o   |
+|        S = @ o  |
+|         o B.Boo |
+|          +o+o+= |
+|         ..+o=*.=|
+|          o=@*o=*|
++----[SHA256]-----+
+
+ssh-copy-id to 10.4.4.132
+spawn ssh-copy-id 10.4.4.132
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.4.132's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.4.132'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.4.132 (10.4.4.132) 56(84) bytes of data.
+
+--- 10.4.4.132 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.046/0.055/0.097/0.017 ms
+10.4.4.132
+
+
+apt install expect ....
+Reading package lists...
+Building dependency tree...
+Reading state information...
+expect is already the newest version (5.45-7kord).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:d3EgiMzdaZWa++2fY7TkGY0iGJzRLyLVT1qGQR7Ybug root@onestack01
+The key's randomart image is:
++---[RSA 2048]----+
+|     o o O==o.   |
+|      + *.Oo=.   |
+|       o *.X. .  |
+|      . * B oo   |
+|       oS=.o.  ..|
+|        E.o.. .+.|
+|           o o+ +|
+|            . .*.|
+|             .ooo|
++----[SHA256]-----+
+
+ssh-copy-id to 10.4.4.132
+spawn ssh-copy-id 10.4.4.132
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.4.132's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.4.132'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.4.132 (10.4.4.132) 56(84) bytes of data.
+
+--- 10.4.4.132 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 92ms
+rtt min/avg/max/mdev = 0.017/0.031/0.093/0.023 ms
+10.4.4.132
+
+
+apt install expect ....
+Reading package lists...
+Building dependency tree...
+Reading state information...
+expect is already the newest version (5.45-7kord).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:DistBF/BDONmRkaJKjWQ7IGFN2tgQc3ZdkH06XoVYFQ root@onestack01
+The key's randomart image is:
++---[RSA 2048]----+
+|=B=oO=++o+.E     |
+|=+*B.+ooo o      |
+|o=o+* o  o .     |
+|o.o* .  .   .    |
+|..  o . S. .     |
+|   . . +. .      |
+|    o o...       |
+|     o  .        |
+|                 |
+
++----[SHA256]-----+
+ssh-copy-id to 10.4.4.132
+spawn ssh-copy-id 10.4.4.132
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.4.132's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.4.132'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.4.132 (10.4.4.132) 56(84) bytes of data.
+
+--- 10.4.4.132 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.032/0.064/0.120/0.031 ms
+10.4.4.132
+
+
+apt install expect ....
+Reading package lists...
+Building dependency tree...
+Reading state information...
+expect is already the newest version (5.45-7kord).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:R7oGcXsVNxgCfyKFEsaK+0JlTQo3bgF0/1AMB7ootLk root@onestack01
+The key's randomart image is:
++---[RSA 2048]----+
+| .o...==+oo ooo  |
+|  ..+++ooo ..o . |
+| . =.B+.o + o    |
+|. +.B..= = +     |
+|.o.=. . S o      |
+| .+    . +       |
+| E .    o        |
+|  . .  .         |
+|   .             |
+
++----[SHA256]-----+
+ssh-copy-id to 10.4.4.132
+spawn ssh-copy-id 10.4.4.132
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.4.132's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.4.132'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.4.132 (10.4.4.132) 56(84) bytes of data.
+
+--- 10.4.4.132 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.019/0.030/0.081/0.017 ms
+10.4.4.132
+
+
+apt install expect ....
+Reading package lists...
+Building dependency tree...
+Reading state information...
+expect is already the newest version (5.45-7kord).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:vlFzZnQ4zwtJGDlz661tZagwZ8562UPChJeoqDARJIA root@onestack01
+The key's randomart image is:
++---[RSA 2048]----+
+|=..       ..     |
+|E..       +o..   |
+|   .      .*=o.  |
+|  .       oo=*   |
+|   .   .S.o=*.o. |
+|  o   ....o=*.+.o|
+|   o .  o  B O.o |
+|    .    o  B =  |
+|        . .o . . |
++----[SHA256]-----+
+
+ssh-copy-id to 10.4.4.132
+spawn ssh-copy-id 10.4.4.132
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.4.132's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.4.132'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.4.132 (10.4.4.132) 56(84) bytes of data.
+
+--- 10.4.4.132 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.016/0.025/0.083/0.019 ms
+10.4.4.132
+
+
+apt install expect ....
+Reading package lists...
+Building dependency tree...
+Reading state information...
+expect is already the newest version (5.45-7kord).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:F87hUVoA377LN4ZY8NHC2FAx3IfWwir2KxgtpLyo4As root@onestack01
+The key's randomart image is:
++---[RSA 2048]----+
+|        ...+*+ o |
+|         ..=..* o|
+|          *=.+ o |
+|        .+==* .  |
+|     . oSo==.o   |
+|      o o.. +.   |
+|E    . . + o.o   |
+|o.  . . . o.o.+  |
+| oo.       .oo . |
+
++----[SHA256]-----+
+ssh-copy-id to 10.4.4.132
+spawn ssh-copy-id 10.4.4.132
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.4.132's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.4.132'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.4.132 (10.4.4.132) 56(84) bytes of data.
+
+--- 10.4.4.132 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.041/0.059/0.117/0.021 ms
+10.4.4.132
+
+
+apt install expect ....
+Reading package lists...
+Building dependency tree...
+Reading state information...
+expect is already the newest version (5.45-7kord).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:NG4qzQCS0pCoVLXPyLttV11e/9xSHT9cps4JQibAHD4 root@onestack01
+The key's randomart image is:
++---[RSA 2048]----+
+|o....+..         |
+|o=   .=          |
+|* o  .E.o        |
+|o. .. ++..o    o+|
+|    .o oS+  . +oB|
+|     +.o  .....+=|
+|    ..+   .. + ++|
+|     .o. .    = +|
+|     ....      . |
++----[SHA256]-----+
+
+ssh-copy-id to 10.4.4.132
+spawn ssh-copy-id 10.4.4.132
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.4.132's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.4.132'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.4.132 (10.4.4.132) 56(84) bytes of data.
+
+--- 10.4.4.132 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.030/0.039/0.097/0.019 ms
+10.4.4.132
+
+
+apt install expect ....
+Reading package lists...
+Building dependency tree...
+Reading state information...
+expect is already the newest version (5.45-7kord).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:sHir5saBPyMT3SkWf1wrj3uzINp/leOiuiduCtHMcUc root@onestack01
+The key's randomart image is:
++---[RSA 2048]----+
+|        E        |
+|       .         |
+|    . o .        |
+|   +.+ +  .      |
+|  .o=+ooS. . .   |
+|  o.=.+.+ . +    |
+|  .= oo..+ o .   |
+|  o.B+o.o.* .    |
+|   *=*=*+=.+     |
++----[SHA256]-----+
+
+ssh-copy-id to 10.4.4.132
+spawn ssh-copy-id 10.4.4.132
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.4.132's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.4.132'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.4.132 (10.4.4.132) 56(84) bytes of data.
+
+--- 10.4.4.132 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.021/0.033/0.100/0.023 ms
+10.4.4.132
+
+
+apt install expect ....
+Reading package lists...
+Building dependency tree...
+Reading state information...
+expect is already the newest version (5.45-7kord).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:t0KZHRq94gN6WtpTnDJrq5He5BjI4Yyq7sViop6vUHM root@onestack01
+The key's randomart image is:
++---[RSA 2048]----+
+|                 |
+|         .       |
+|        . o      |
+|         * o     |
+|  + E ..S.+      |
+| *.= oo++o .     |
+|+o=o= +=+ .      |
+|* +. &+  o       |
+|O*o.*o=o         |
++----[SHA256]-----+
+
+ssh-copy-id to 10.4.4.132
+spawn ssh-copy-id 10.4.4.132
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.4.132's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.4.132'"
+and check to make sure that only the key(s) you wanted were added.
+
+PING 10.4.4.132 (10.4.4.132) 56(84) bytes of data.
+
+--- 10.4.4.132 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 93ms
+rtt min/avg/max/mdev = 0.018/0.029/0.079/0.018 ms
+PING 10.4.4.132 (10.4.4.132) 56(84) bytes of data.
+
+--- 10.4.4.132 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 90ms
+rtt min/avg/max/mdev = 0.017/0.032/0.087/0.021 ms
+10.4.4.132
+10.4.4.132
+
+apt install expect ....
+Reading package lists...
+Building dependency tree...
+Reading state information...
+expect is already the newest version (5.45-7kord).
+The following packages were automatically installed and are no longer required:
+  adwaita-icon-theme augeas-lenses autotools-dev cifs-utils dnsmasq-base gcc
+  gcc-5 gconf-service gconf-service-backend gconf2 gconf2-common
+  gir1.2-appindicator3-0.1 gir1.2-atk-1.0 gir1.2-freedesktop
+  gir1.2-gdkpixbuf-2.0 gir1.2-glib-2.0 gir1.2-gtk-3.0 gir1.2-gtk-vnc-2.0
+  gir1.2-libosinfo-1.0 gir1.2-libvirt-glib-1.0 gir1.2-pango-1.0
+  gir1.2-spice-client-glib-2.0 gir1.2-spice-client-gtk-3.0 gir1.2-vte-2.91
+  hicolor-icon-theme humanity-icon-theme ipxe-qemu
+  ipxe-qemu-256k-compat-efi-roms iso-codes kvmtool libaio1 libappindicator3-1
+  libasan2 libasound2 libasound2-data libasyncns0 libatk-bridge2.0-0
+  libatk1.0-0 libatk1.0-data libatomic1 libatspi2.0-0 libaugeas0
+  libavahi-client3 libavahi-common-data libavahi-common3 libbluetooth3
+  libboost-filesystem1.58.0 libbrlapi0.6 libc-dev-bin libc6-dev libcaca0
+  libcacard0 libcairo-gobject2 libcapnp-0.5.3 libcc1-0 libcolord2 libcroco3
+  libcups2 libdbusmenu-glib4 libdbusmenu-gtk3-4 libdrm-amdgpu1 libdrm-nouveau2
+  libdrm-radeon1 libegl1-mesa libelf1 libepoxy0 libfdt1 libflac8 libgbm1
+  libgcc-5-dev libgconf-2-4 libgdk-pixbuf2.0-0 libgdk-pixbuf2.0-common
+  libgirepository-1.0-1 libgl1-mesa-dri libgmpxx4ldbl libgomp1 libgtk-3-0
+  libgtk-3-bin libgtk-3-common libgtk-vnc-2.0-0 libgtk2.0-0 libgtk2.0-common
+  libgvnc-1.0-0 libibverbs1 libindicator3-7 libiscsi2 libitm1 libjbig0
+  libjpeg-turbo8 libjpeg8 liblcms2-2 libllvm3.8 libltdl7 liblxc1 libmirclient9
+  libmircommon7 libmircore1 libmirprotobuf3 libnetcf1 libnfs-dev libnfs8
+  libnuma1 libogg0 libopus0 libosinfo-1.0-0 libpangoxft-1.0-0 libpcap0.8
+  libprotobuf-lite9v5 libpulse-mainloop-glib0 libpulse0 librdmacm1
+  librest-0.7-0 librsvg2-2 librsvg2-common libsdl1.2debian libsndfile1
+  libsoup-gnome2.4-1 libsoup2.4-1 libspice-client-glib-2.0-8
+  libspice-client-gtk-2.0-4 libspice-client-gtk-3.0-4 libssh2-1 libtalloc2
+  libtiff5 libtool libtool-bin libubsan0 libusbredirhost-dev libusbredirhost1
+  libusbredirparser-dev libusbredirparser1 libvirt-bin libvirt-clients
+  libvirt-daemon libvirt-daemon-system libvirt-glib-1.0-0 libvirt0 libvorbis0a
+  libvorbisenc2 libvte-2.91-0 libvte-2.91-common libwayland-client0
+  libwayland-cursor0 libwayland-egl1-mesa libwayland-server0 libwbclient0
+  libx11-xcb1 libxcb-dri2-0 libxcb-dri3-0 libxcb-present0 libxcb-sync1
+  libxcb-xfixes0 libxcomposite1 libxcursor1 libxdamage1 libxen-4.6
+  libxenstore3.0 libxfixes3 libxft2 libxi6 libxinerama1 libxkbcommon0
+  libxrandr2 libxshmfence1 libxslt1.1 libyajl2 linux-libc-dev
+  localechooser-data lxc lxc-common lxc-templates lxc1 python-cairo
+  python-dbus python-gi python-gi-cairo python-ipaddr python-libvirt
+  python-libxml2 python3-lxc qemu qemu-block-extra qemu-efi qemu-guest-agent
+  qemu-kvm qemu-slof qemu-system qemu-system-arm qemu-system-common
+  qemu-system-mips qemu-system-misc qemu-system-ppc qemu-system-s390x
+  qemu-system-sparc qemu-system-x86 qemu-user qemu-utils samba-common seabios
+  spice-client-glib-usb-acl-helper spice-client-gtk ubuntu-mono uml-utilities
+  usbredirserver user-setup virt-manager virtinst xvnc4viewer
+Use 'apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 36 not upgraded.
+spawn ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/root/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_rsa.
+
+Your public key has been saved in /root/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:zmA8ek83liM1JUIfteE1Cu2T0Bi/v9yljUuQXzCLeGw root@onestack01
+The key's randomart image is:
++---[RSA 2048]----+
+|        . +*o o  |
+|       . .o=o= . |
+|        . oo*.o  |
+|     .   . =++ + |
+|      = S + E.. .|
+|     o = . = + . |
+|    . . = *   + .|
+|     . o + o o *.|
+|        .     *.o|
++----[SHA256]-----+
+
+ssh-copy-id to 10.4.4.132
+ssh-copy-id to 10.4.4.132
+spawn ssh-copy-id 10.4.4.132
+spawn ssh-copy-id 10.4.4.132
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/root/.ssh/id_rsa.pub"
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+root@10.4.4.132's password: root@10.4.4.132's password: 
+
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.4.132'"
+and check to make sure that only the key(s) you wanted were added.
+
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh '10.4.4.132'"
+and check to make sure that only the key(s) you wanted were added.
+

@@ -1,0 +1,14 @@
+10.4.7.147
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+ERROR, Our deployment Depends: kubelet (= 1.18.6-00) but  has been installed, please fix it manually !!
+10.4.7.147
+
+
+docker.io is installed,skip.
+cpu-checker is installed,skip.
+jq is installed,skip.
+ERROR, Our deployment Depends: kubelet (= 1.18.6-00) but  has been installed, please fix it manually !!
